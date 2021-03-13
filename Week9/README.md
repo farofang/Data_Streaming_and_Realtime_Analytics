@@ -8,7 +8,7 @@
 
 **9.2 Video game and data analytics**
 + Get python game from [4]
-    - If you don't want to play in a fullscreen mode, you can comment out at line 419 of space_wars.py and then uncomment line 418 of the same file.
+    - If you don't want to play the game in a fullscreen mode, you can comment line 419 of space_wars.py out and then uncomment line 418 of the same file.
 + Real-time data analytics in video games [5]
     - Which Metrics Matter?
 
