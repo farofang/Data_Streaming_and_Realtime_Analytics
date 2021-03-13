@@ -21,4 +21,4 @@
 [2] Paper: http://conference.scipy.org/proceedings/scipy2020/pdfs/jacob_montiel.pdf </br>
 [3] His talk: https://www.youtube.com/watch?v=sw85SCv847Y </br>
 [4] SpaceWars game: https://github.com/DanPetersson/SpaceWars.git </br>
-[5] https://developer.microsoft.com/en-us/games/blog/how-to-implement-real-time-analytics-in-online-games/ </br>
+[5] How to Implement Real-time Analytics in Online Games: https://developer.microsoft.com/en-us/games/blog/how-to-implement-real-time-analytics-in-online-games/ </br>
