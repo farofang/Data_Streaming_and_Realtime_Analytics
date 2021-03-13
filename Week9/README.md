@@ -15,12 +15,9 @@
 
 **Reference**
 
-9.1 </br>
 [1] Notebook: https://github.com/jacobmontiel/skmultiflow-demo-scipy2020/blob/master/skmultiflow-demo-scipy2020.ipynb </br>
 [2] Paper: http://conference.scipy.org/proceedings/scipy2020/pdfs/jacob_montiel.pdf </br>
 [3] His talk: https://www.youtube.com/watch?v=sw85SCv847Y </br>
-
-9.2 </br>
 [4] SpaceWars game: https://github.com/DanPetersson/SpaceWars.git </br>
 
 
