@@ -40,4 +40,5 @@
 [4] SpaceWars game: https://github.com/DanPetersson/SpaceWars.git </br>
 [5] How to Implement Real-time Analytics in Online Games: https://developer.microsoft.com/en-us/games/blog/how-to-implement-real-time-analytics-in-online-games/ </br>
 [6] Interesting info: https://scikit-learn.org/0.15/modules/scaling_strategies.html#incremental-learning </br>
-[7] Apache beam: https://beam.apache.org/get-started/mobile-gaming-example/
+[7] Apache beam: https://beam.apache.org/get-started/mobile-gaming-example/ </br>
+[8] ADWIN: https://www.cs.upc.edu/~abifet/Prova/
