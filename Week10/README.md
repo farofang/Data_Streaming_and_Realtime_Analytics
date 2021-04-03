@@ -2,8 +2,7 @@
 ***Outline*** </br>
 **10.1 What we've learned so far** </br>
 **10.2 Case study: Game Analytics** </br>
-  - paper: A game analytics model to identify player profiles in singleplayer games [1] </br>
-  - 
+  - paper: A game analytics model to identify player profiles in singleplayer games [1] and slide.pdf </br>
 **10.3 Introduction to MOA** [2] </br>
 **10.4 Introduction and setup for Kaggle competition** </br>
 
