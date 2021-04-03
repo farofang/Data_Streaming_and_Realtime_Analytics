@@ -8,6 +8,7 @@
 
 **9.2 Video game and data analytics**
 + Get python game from [4]
++ pip install pygame (If you don't have it.)
     - If you don't want to play the game in a fullscreen mode, you can comment line 419 of space_wars.py out and then uncomment line 418 of the same file.
 + Real-time data analytics in video games [5]
     - Which Metrics Matter?
@@ -38,5 +39,6 @@
 [3] His talk: https://www.youtube.com/watch?v=sw85SCv847Y </br>
 [4] SpaceWars game: https://github.com/DanPetersson/SpaceWars.git </br>
 [5] How to Implement Real-time Analytics in Online Games: https://developer.microsoft.com/en-us/games/blog/how-to-implement-real-time-analytics-in-online-games/ </br>
-[6] Interesting info: https://scikit-learn.org/0.15/modules/scaling_strategies.html#incremental-learning
-[7] Apache beam: https://beam.apache.org/get-started/mobile-gaming-example/
+[6] Interesting info: https://scikit-learn.org/0.15/modules/scaling_strategies.html#incremental-learning </br>
+[7] Apache beam: https://beam.apache.org/get-started/mobile-gaming-example/ </br>
+[8] ADWIN: https://www.cs.upc.edu/~abifet/Prova/
