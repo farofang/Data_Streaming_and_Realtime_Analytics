@@ -9,7 +9,7 @@
 
 **10.3 Introduction to MOA** [3] </br>
 
-**10.4 Introduction and setup for Kaggle competition [4] ** </br>
+**10.4 Introduction and setup for Kaggle competition** [4] </br>
 
 ***Reference***
 
