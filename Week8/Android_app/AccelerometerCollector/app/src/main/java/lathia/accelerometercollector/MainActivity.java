@@ -14,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 //import io.netpie.microgear.Microgear;
@@ -24,22 +25,8 @@ public class MainActivity extends AppCompatActivity
 {
     private Accelerometer accelerometer;
     private Button sensingButton;
-    /*public  Microgear microgear = new Microgear(this);
-    private String appid = "ekaratnida"; //APP_ID
-    private String key = "jtD9ag08syPtqiK"; //KEY
-    private String secret = "vDEEIuw9Ssj4OvbrBHmM4hZfa"; //SECRET
-    private String alias = "android";
-
-    Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            Bundle bundle = msg.getData();
-            String string = bundle.getString("myKey");
-            //TextView myTextView =
-            //        (TextView)findViewById(R.id.textView);
-            //myTextView.append(string+"\n");
-        }
-    };*/
+    private EditText topicEditTxt;
+    public static String URL = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -51,14 +38,10 @@ public class MainActivity extends AppCompatActivity
 
         accelerometer = Accelerometer.getInstance(this);
         sensingButton = (Button) findViewById(R.id.sensingButton);
+        topicEditTxt = (EditText) findViewById(R.id.topicEdit);
+
         setRecyclerView();
         LabelPreferences.clear(this);
-
-        //microgear = new Microgear(this);
-        //MicrogearCallBack callback = new MicrogearCallBack();
-        //microgear.connect(appid,key,secret,alias);
-        //microgear.setCallback(callback);
-        //microgear.subscribe("/test");
 
     }
 
@@ -66,7 +49,6 @@ public class MainActivity extends AppCompatActivity
     protected void onResume()
     {
         super.onResume();
-        //microgear.bindServiceResume();
         setButton();
     }
 
@@ -80,7 +62,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //microgear.disconnect();
     }
 
     private void startSensing()
@@ -153,6 +134,13 @@ public class MainActivity extends AppCompatActivity
     {
         if (!accelerometer.isSensing())
         {
+            String topicStr = topicEditTxt.getText().toString();
+            if(topicStr.isEmpty()){
+                topicStr = "test";
+            }
+
+            URL =  "https://api.netpie.io/topic/ekaratnida/"+topicStr+"?auth=jtD9ag08syPtqiK:vDEEIuw9Ssj4OvbrBHmM4hZfa";
+
             startSensing();
         }
         else
@@ -186,77 +174,4 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /*
-    class MicrogearCallBack implements MicrogearEventListener {
-        @Override
-        public void onConnect() {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "Now I'm connected with netpie");
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("Connected","Now I'm connected with netpie");
-        }
-
-        @Override
-        public void onMessage(String topic, String message) {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", topic+" : "+message);
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("Message",topic+" : "+message);
-        }
-
-        @Override
-        public void onPresent(String token) {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "New friend Connect :"+token);
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("present","New friend Connect :"+token);
-        }
-
-        @Override
-        public void onAbsent(String token) {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "Friend lost :"+token);
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("absent","Friend lost :"+token);
-        }
-
-        @Override
-        public void onDisconnect() {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "Disconnected");
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("disconnect","Disconnected");
-        }
-
-        @Override
-        public void onError(String error) {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "Exception : "+error);
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("exception","Exception : "+error);
-        }
-
-        @Override
-        public void onInfo(String info) {
-            Message msg = handler.obtainMessage();
-            Bundle bundle = new Bundle();
-            bundle.putString("myKey", "Exception : "+info);
-            msg.setData(bundle);
-            handler.sendMessage(msg);
-            Log.i("info","Info : "+info);
-        }
-    }
-     */
 }

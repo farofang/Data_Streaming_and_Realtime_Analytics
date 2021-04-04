@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DataWriter
 {
@@ -45,7 +47,7 @@ public class DataWriter
 
     public void append(SensorEvent event) throws IOException
     {
-        String row = "" + System.currentTimeMillis();
+        String row = getCurrentTimeStamp(); // + ":" + System.currentTimeMillis();
         for (int i=0; i<3; i++)
         {
             row += "," + event.values[i];
@@ -60,7 +62,7 @@ public class DataWriter
                 try  {
                     //Your code goes here
                     //MainActivity.microgear.publish("Topictest", row);
-                    URL url = new URL("https://api.netpie.io/topic/ekaratnida/test?auth=jtD9ag08syPtqiK:vDEEIuw9Ssj4OvbrBHmM4hZfa");
+                    URL url = new URL(MainActivity.URL);
                     HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
                     httpCon.setDoOutput(true);
                     httpCon.setRequestMethod("PUT");
@@ -79,6 +81,20 @@ public class DataWriter
 
 
         Log.i("DataWriter", row);
+    }
+
+    public static String getCurrentTimeStamp(){
+        try {
+
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String currentDateTime = dateFormat.format(new Date()); // Find todays date
+
+            return currentDateTime;
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            return null;
+        }
     }
 
     public void finish() throws IOException

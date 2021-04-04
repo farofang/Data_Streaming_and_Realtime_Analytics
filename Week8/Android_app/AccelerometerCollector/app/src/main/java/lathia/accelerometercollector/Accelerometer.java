@@ -47,7 +47,7 @@ public class Accelerometer implements SensorEventListener
     public void start(final Context context) throws IOException
     {
         fileWriter = new DataWriter(context, LabelPreferences.getLabel(context));
-        mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_GAME);
+        mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_STATUS_ACCURACY_HIGH);
         isSensing = true;
     }
 
