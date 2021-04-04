@@ -5,13 +5,18 @@
 
 **10.2 Case study: Game Analytics**
   - paper: A game analytics model to identify player profiles in singleplayer games [1] and slide.pdf </br>
+  - Best stream clustering reference [2]
 
-**10.3 Introduction to MOA** [2] </br>
+**10.3 Introduction to MOA** [3] </br>
 
-**10.4 Introduction and setup for Kaggle competition** </br>
+**10.4 Introduction and setup for Kaggle competition [4] ** </br>
 
 ***Reference***
 
 [1] https://www.sbgames.org/sbgames2019/files/papers/ComputacaoFull/198360.pdf
 
-[2] https://moa.cms.waikato.ac.nz/
+[2] https://www.matthias-carnein.de/streamclustering
+
+[3] https://moa.cms.waikato.ac.nz/
+
+[4] https://www.kaggle.com/c/shopee-product-matching
