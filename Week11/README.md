@@ -11,4 +11,4 @@
 
 [2] http://huawei-noah.github.io/streamDM/docs/StreamKM.html
 
-[3] KDD2 - 2020 - DBS - LMU
+[3] https://www.dbs.ifi.lmu.de/cms/studium_lehre/lehre_master/kdd220/index.html
