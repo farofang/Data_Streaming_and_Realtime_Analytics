@@ -1,4 +1,4 @@
-****Week 12 Game Analytics Implementation**** </br></br>
+**Week 12 Game Analytics Implementation** </br></br>
 ***Get your hand dirty*** </br>
 
 - Modify the game from this link ( https://github.com/DanPetersson/SpaceWars ) to collect your game data.
