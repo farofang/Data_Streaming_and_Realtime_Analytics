@@ -1,4 +1,4 @@
-****Week 11 Stream Clustering Algorithm ****</br></br>
+****Week 11 Stream Clustering Algorithm****</br></br>
 ***Outline*** </br>
 - Clustering_in_data_stream.pdf [1]
 - Tutorial.pdf [MOA]
