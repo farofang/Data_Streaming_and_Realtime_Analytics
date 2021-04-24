@@ -8,3 +8,7 @@
 - Example of subscribers
 - Header (time (ms), x, y, z (axis of accelerometer)
 - ![ex1](./ex1.png)
+
+- V.2
+  - Fix screen orientation --> only portrait
+  - No sleep screen while app is running
