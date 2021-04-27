@@ -11,7 +11,6 @@
     - A2) Number of coins collected
     - A3) Number of destroyed enemies
     - A4) Number of shots
-    - A5) Number of shots on target/enemies
-    - A6) Number of shots without enemies
+    - A5) Number of shots without enemies
 - Apply K-Means clustering, K = 4
 - Apply Decision Trees to classify users into 4 groups (Hardcore achiever, Hardcore killer, Casual achiever, Hardcore achiever)
