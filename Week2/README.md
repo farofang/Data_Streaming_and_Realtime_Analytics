@@ -29,3 +29,7 @@ The third part explains how existing systems can be connected to Kafka using Kaf
 ## [Part 4 - Processing data with Kafka Streams](./part4/README.md)
 
 The fourth part introduces Kafka Streams and explains its data processing capabilities. It explores the `WordCountDemo` sample application by running it and detailing its processing logic.
+
+## Good resources for other choices
+
+Docker: https://betterprogramming.pub/a-simple-apache-kafka-cluster-with-docker-kafdrop-and-python-cf45ab99e2b9
