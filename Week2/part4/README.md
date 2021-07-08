@@ -147,10 +147,7 @@ gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-sc
 
 ### After finishing gradle assemble
 ```sh
-Copy kafka-streams-examples-2.7.0.jar from 
-C:\src\kafka-2.7.0-src\streams\examples\build\libs
-and replace the existing one at 
-C:\kafka_2.13-2.7.0\libs
+Copy "kafka-streams-examples-2.7.0.jar" from "C:\src\kafka-2.7.0-src\streams\examples\build\libs" to "C:\kafka_2.13-2.7.0\libs"
 ```
 
 ### Checking the result
