@@ -40,11 +40,7 @@ In this workshop, we will use the Kafka command line tools.
 > cd kafka-2.13-2.7.0
 ```
 
-## Kafka cluster
+## Setup Kafka cluster
 
 We want to use a local Kafka cluster, follow the [local Kafka setup](./local-kafka.md) steps.
 
-
-## Next Steps
-
-Continue to [Part 2](../part2/README.md).
