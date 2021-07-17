@@ -1,5 +1,11 @@
 # Part 1 - Setup and Prerequisites
 
+## 4 July 2021 
+- Download virtualbox https://www.virtualbox.org/
+- Download and install ubuntu (Ubuntu 20.04.2.0 LTS) https://ubuntu.com/download/desktop
+- Install docker (desktop) on window (V 3.5.1)
+https://docs.docker.com/docker-for-windows/install/
+
 ## Kafka overview
 
 [Apache Kafka](https://kafka.apache.org) is a distributed streaming platform. It provides publish-subscribe APIs and can store and process streams of records at large scale.
@@ -34,15 +40,7 @@ In this workshop, we will use the Kafka command line tools.
 > cd kafka-2.13-2.7.0
 ```
 
-This workshop assumes you are running a Unix-based platform like macOS or Linux and will use the scripts from the `bin` directory in the examples. If you are on Windows, use the scripts that are in the `bin/windows` directory.
+## Setup Kafka cluster
 
-## Kafka cluster
+We want to use a local Kafka cluster, follow the [local Kafka setup](./local-kafka.md) steps.
 
-This workshop requires access to a Kafka cluster. If you don't already have a Kafka cluster, you can use [IBM Event Streams](https://www.ibm.com/cloud/event-streams) or setup a Kafka cluster on your computer.
-
-- If you want to use a local Kafka cluster, follow the [local Kafka setup](./local-kafka.md) steps.
-
-
-## Next Steps
-
-Continue to [Part 2](../part2/README.md).

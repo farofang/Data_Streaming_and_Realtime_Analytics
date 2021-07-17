@@ -88,6 +88,9 @@ bootstrap.servers=localhost:9092,localhost:9192,localhost:9292
 replication.factor=3
 ```
 
-## Back to Part 1
+## Menu
+Continue to [Part 2](../part2/README.md)
 
 Return to [Part 1](../part1/README.md)
+
+
