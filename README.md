@@ -3,8 +3,10 @@
 
 1          Introduction
 
-2          Kafka
+2          Kafka technology
 
-3          Kafka Streaming
+3          Kafka Streaming (I)
 
-4          IoT
+4          Kafka Streaming (II)
+
+5          IoT
