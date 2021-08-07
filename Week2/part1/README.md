@@ -1,11 +1,5 @@
 # Part 1 - Setup and Prerequisites
 
-## 4 July 2021 
-- Download virtualbox https://www.virtualbox.org/
-- Download and install ubuntu (Ubuntu 20.04.2.0 LTS) https://ubuntu.com/download/desktop
-- Install docker (desktop) on window (V 3.5.1)
-https://docs.docker.com/docker-for-windows/install/
-
 ## Kafka overview
 
 [Apache Kafka](https://kafka.apache.org) is a distributed streaming platform. It provides publish-subscribe APIs and can store and process streams of records at large scale.
