@@ -42,3 +42,6 @@ response = client.describe_cluster(
 
 print(response)
 ```
+
+chmod 400
+
