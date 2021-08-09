@@ -164,6 +164,9 @@ There is:
 
 Whichever of these limits is reached first will trigger deletion records. -->
 
+## Test with python
+https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
+
 ## Next Steps
 
 Continue to [Part 3](../part3/README.md).
