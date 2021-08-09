@@ -128,7 +128,7 @@ replication.factor=3
 ## Menu
 Continue to [Part 2](../part2/README.md)
 
-Return to [Part 1](../part1/README.md)
+Return to [Week02](../README.md)
 
 
 
