@@ -5,7 +5,7 @@
 [Apache Kafka](https://kafka.apache.org) is a distributed streaming platform. It provides publish-subscribe APIs and can store and process streams of records at large scale.
 
 Kafka is made up of the following components:
-- Broker: One of more brokers form a Kafka cluster
+- Broker (or server): One of more brokers form a Kafka cluster
 - Producer: Client to send records into Kafka
 - Consumer: Client to read records from Kafka
 - Admin: Client to manage Kafka clusters
