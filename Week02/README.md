@@ -21,3 +21,6 @@ The fourth part introduces Kafka Streams and explains its data processing capabi
 ## Good resource for Docker
 
 Docker: https://betterprogramming.pub/a-simple-apache-kafka-cluster-with-docker-kafdrop-and-python-cf45ab99e2b9
+
+
+# New 1/2564 (Use Kafka on AWS (MKS))
