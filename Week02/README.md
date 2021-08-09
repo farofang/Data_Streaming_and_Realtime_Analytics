@@ -24,3 +24,21 @@ Docker: https://betterprogramming.pub/a-simple-apache-kafka-cluster-with-docker-
 
 
 # New 1/2564 (Use Kafka on AWS (MKS))
+
+## Create a virtual environment for python
+```console
+python3 -m venv kafka_demo
+source kafka_demo/bin/activate
+(kafka_demo) (base) Ekarats-MacBook-Pro:Week02 ekaratrattagan$ 
+```
+```python
+import boto3
+
+client = boto3.client('kafka')
+
+response = client.describe_cluster(
+    ClusterArn='arn:aws:kafka:us-east-2:469965391342:cluster/demo-cluster-1/9d12811a-c04f-48de-a367-26a1e87ef661-4'
+)
+
+print(response)
+```
