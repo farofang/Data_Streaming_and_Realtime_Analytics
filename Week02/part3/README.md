@@ -3,6 +3,8 @@
 ![image](https://user-images.githubusercontent.com/69342162/128969917-90a53bf8-f250-4d29-af07-a58165c3722a.png)
 * image captured from https://howtoprogram.xyz/2016/07/10/apache-kafka-connect-example/
 
+![image] (pipeline.png)
+
 In this part of the workshop, we will look at Kafka Connect and how to stream data between external systems and Kafka. Make sure that you've completed Part 2, since this part follows on from [Part 2](../part2/README.md).
 
 ## Kafka Connect
