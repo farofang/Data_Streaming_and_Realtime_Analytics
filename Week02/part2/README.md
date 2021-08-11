@@ -84,11 +84,13 @@ The first line gives a summary of the topic including the topic configurations, 
 
 The additional lines provide information about each partition:
 
-    - **Leader** is the broker currently responsible for reads and writes for the given partition. Each broker will be the leader for a randomly selected portion of the partitions.
-    - **Replicas** is the list of brokers that replicate the log for this partition regardless of whether they are the leader or even if they are currently online.
-    - **Isr** is the set of **In-Sync Replicas**. This is the subset of the replicas list that is currently online and fully in-sync with the leader.
+- **Leader** is the broker currently responsible for reads and writes for the given partition. Each broker will be the leader for a randomly selected portion of the partitions.
+- **Replicas** is the list of brokers that replicate the log for this partition regardless of whether they are the leader or even if they are currently online.
+- **Isr** is the set of **In-Sync Replicas**. This is the subset of the replicas list that is currently online and fully in-sync with the leader.
 
-## Consumer groups
+---
+
+## 2.3 Consumer groups
 
 A **consumer group** is a collection of consumers that cooperate to consume a set of topics. Kafka guarantees that, within a group, each partition of a topic will only be consumed by a single consumer.
 
@@ -162,6 +164,8 @@ There is:
 - [`retention.bytes`](https://kafka.apache.org/documentation/#retention.bytes): This specifies the guaranteed minimum size of data for each partition kept in Kafka per partition
 
 Whichever of these limits is reached first will trigger deletion records.
+
+---
 
 ## Test with python
 https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
