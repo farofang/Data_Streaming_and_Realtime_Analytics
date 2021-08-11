@@ -1,7 +1,8 @@
-Week3
-1. Basic setup (My first topic)
+###Todo
+
+##1. Basic setup (My first topic)
 1.1 Start kafka cluster --> double click "1_1_start_cluster.bat".
-1.2 Create a topic --> double click "create_my_first_topic.bat"
+1.2 Create a topic --> double click "1_2_create_my_first_topic.bat"
 1.3 Start consumer --> double click "1_3_run_consumer_my_first_topic.bat"
 1.4 Start producer --> double click "1_4_run_producer_my_first_topic.bat"
 1.5 After finish testing, close all windows.
