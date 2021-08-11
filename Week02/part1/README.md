@@ -5,14 +5,13 @@
 [Apache Kafka](https://kafka.apache.org) is a distributed streaming platform. It provides publish-subscribe APIs and can store and process streams of records at large scale.
 
 Kafka is made up of the following components:
+- <b> Cluster </b> : A Kafka cluster consists of one or more servers (Kafka brokers) running Kafka
 - <b> Broker (or server) </b> : One of more brokers form a Kafka cluster
 - <b> Producer </b> : Client to send records into Kafka
 - <b> Consumer </b> : Client to read records from Kafka
-- <b> Admin </b> : Client to manage Kafka clusters
-- <b> Connect </b> : Runtime for Sink and Source Connectors to stream data between external systems and Kafka
-- <b> Streams </b> : Library to process streams of records in real time
 
-![Kafka Platform](./kafka-platform.png)
+![Kafka architecture](https://user-images.githubusercontent.com/69342162/128960348-ca77f81b-a858-4107-b5c8-a76239932b92.png)
+*Kafka architecture: image refered from https://data-flair.training/blogs/kafka-architecture/*
 
 You can learn more about Kafka in this introductory article,
 
@@ -114,7 +113,7 @@ Note that if a server is off,
 ```
 
 ## Menu
-Continue to [Part 2](../part2/README.md)
+Continue to [part 2](../part2/README.md)
 
 Return to [Week02](../README.md)
 
