@@ -1,4 +1,4 @@
-# Configuring Kafka Connect for Local Kafka cluster
+# Configuring Kafka Connect for Local Kafka cluster (connect-distributed.properties)
 
 Create a file with the following contents:
 
