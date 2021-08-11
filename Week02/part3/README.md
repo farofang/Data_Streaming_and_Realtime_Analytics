@@ -21,7 +21,35 @@ To keep things simple, we will use one of the built-in connectors: [`FileStreamS
 In distributed mode, the first step is to start the Kafka Connect runtime. We need to create a properties file with the correct details to configure Kafka Connect and enable the runtime to connect to our Kafka cluster.
 
 In order to configure Kafka Connect, follow the steps for your Kafka environment:
-- Link to [connect-distributed.properties](./local-kafka.md)
+
+# connect-distributed.properties
+
+Create a file (connect-distributed.properties) with the following contents:
+
+```properties
+# connectivity settings for the runtime
+bootstrap.servers=localhost:9092,localhost:9192,localhost:9292
+
+# unique name for the cluster, used in forming the Connect cluster group. Note that this must not conflict with consumer group IDs
+group.id=connect_cluster
+
+# The converters specify the format of data in Kafka and how to translate it into Connect data. Every Connect user will
+# need to configure these based on the format they want their data in when loaded from or stored into Kafka
+key.converter=org.apache.kafka.connect.storage.StringConverter
+value.converter=org.apache.kafka.connect.storage.StringConverter
+
+# Topic to use for storing offsets
+offset.storage.topic=connect_offsets
+offset.storage.replication.factor=3
+
+# Topic to use for storing connector and task configurations
+config.storage.topic=connect_configs
+config.storage.replication.factor=3
+
+# Topic to use for storing statuses
+status.storage.topic=connect_status
+status.storage.replication.factor=3
+```
 
 By default, the runtime exposes its REST API on port `8083`. You can change this port by setting `rest.port=<PORT>`. The rest of this workshop assumes that the port is `8083`.
 
