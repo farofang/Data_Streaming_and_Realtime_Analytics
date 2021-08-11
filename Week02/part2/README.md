@@ -2,6 +2,9 @@
 
 In this part, we will review the most basics Kafka concepts, and start out by sending and consuming messages. This follows on from [Part 1](../part1/README.md).
 
+![image](https://user-images.githubusercontent.com/69342162/128968520-3dfabbba-3d34-4783-87ec-e307eb3c8c09.png)
+* image captured from https://www.cloudkarafka.com/blog/part1-kafka-for-beginners-what-is-apache-kafka.html
+
 ## 2.1) Creating a topic
 
 A **topic** is a category or feed name to which records are published. To create a topic we need 4 things:
