@@ -2,6 +2,8 @@
 
 In this part of the workshop, we will learn about Kafka Streams and how it can be used to process streams of data in real time. Make sure that you've completed Part 3, since this part follows on from [Part 3](../part3/README.md).
 
+![image](pipeline.png)
+
 ## Kafka Streams
 
 [Kafka Streams](https://kafka.apache.org/documentation/streams/) is a client library for building applications and microservices, where the input and output data are stored in Kafka. It combines the simplicity of writing and deploying standard Java and Scala applications on the client-side with the benefits of Kafka's server-side cluster technology.
