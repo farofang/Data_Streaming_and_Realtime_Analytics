@@ -171,4 +171,5 @@ https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e
 ## Next Steps
 
 Continue to [part 3](../part3/README.md).
-back to [part 1](../part2/README.md)
+
+back to [part 1](../part1/README.md)
