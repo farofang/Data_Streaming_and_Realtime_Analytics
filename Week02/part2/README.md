@@ -172,6 +172,7 @@ https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e
 
 ## Good reference
 - https://ibm-cloud-architecture.github.io/refarch-eda/technology/kafka-overview/
+- https://www.cloudkarafka.com/blog/part1-kafka-for-beginners-what-is-apache-kafka.html
 
 ## Next Steps
 
