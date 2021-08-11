@@ -135,3 +135,5 @@ Kafka comes by default with a few connectors to integrate with:
 ## Next Steps
 
 Continue to [Part 4](../part4/README.md).
+
+back to [part 2](../part2/README.md)
