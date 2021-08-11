@@ -170,8 +170,13 @@ Whichever of these limits is reached first will trigger deletion records.
 ## Test with python
 https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
 
+## Good reference
+- https://ibm-cloud-architecture.github.io/refarch-eda/technology/kafka-overview/
+
 ## Next Steps
 
 Continue to [part 3](../part3/README.md).
 
 back to [part 1](../part1/README.md)
+
+
