@@ -28,8 +28,9 @@ You should see this output:  `my-first-topic`
 
 ---------------
 
-## 2.2) Sending some messages
+## 2.2) Sending and consuming some messages
 
+### Sending
 Kafka comes with a command line **producer** that takes data from a file or from standard input and sends it out as messages to the Kafka cluster. By default, each line will be sent as a separate message.
 
 Run the producer, and then type a few messages into the console to send to the server.
@@ -40,7 +41,7 @@ C:\kafka_2.13-2.7.0>bin\windows\kafka-console-producer.bat --bootstrap-server "l
 > This is another message
 ```
 
-## Consuming some messages
+### Consuming
 
 Kafka also has a command line **consumer** that prints messages to standard output.
 
@@ -58,8 +59,6 @@ This is another message
 Here, we used the `--from-beginning` flag. Otherwise, by default, the consumer starts consuming at the end of topics and only receives new messages.
 
 If you have both of the above commands running in a different terminal then you should now be able to type messages into the producer terminal and see them appear in the consumer terminal.
-
-All the command line tools have additional options; running the command with no arguments will display detailed usage information for the options.
 
 ## Multi broker environment
 
@@ -88,7 +87,7 @@ The additional lines provide information about each partition:
     - **Leader** is the broker currently responsible for reads and writes for the given partition. Each broker will be the leader for a randomly selected portion of the partitions.
     - **Replicas** is the list of brokers that replicate the log for this partition regardless of whether they are the leader or even if they are currently online.
     - **Isr** is the set of **In-Sync Replicas**. This is the subset of the replicas list that is currently online and fully in-sync with the leader.
-<!--
+
 ## Consumer groups
 
 A **consumer group** is a collection of consumers that cooperate to consume a set of topics. Kafka guarantees that, within a group, each partition of a topic will only be consumed by a single consumer.
@@ -105,7 +104,6 @@ Now let's use the `kafka-consumer-groups.bat` tool to check the state of our gro
 ```sh
 > bin\windows\kafka-consumer-groups.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --group my-group
 ```
-
 Here's the output:
 
 ```sh
@@ -163,7 +161,7 @@ There is:
 
 - [`retention.bytes`](https://kafka.apache.org/documentation/#retention.bytes): This specifies the guaranteed minimum size of data for each partition kept in Kafka per partition
 
-Whichever of these limits is reached first will trigger deletion records. -->
+Whichever of these limits is reached first will trigger deletion records.
 
 ## Test with python
 https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
