@@ -18,30 +18,10 @@ The third part explains how existing systems can be connected to Kafka using Kaf
 
 The fourth part introduces Kafka Streams and explains its data processing capabilities. It explores the `WordCountDemo` sample application by running it and detailing its processing logic.
 
-## Good resource for Docker
+
+
+
+## Another way (by using Docker)
 
 Docker: https://betterprogramming.pub/a-simple-apache-kafka-cluster-with-docker-kafdrop-and-python-cf45ab99e2b9
-
-
-# New 1/2564 (Use Kafka on AWS (MKS))
-
-## Create a virtual environment for python
-```console
-python3 -m venv kafka_demo
-source kafka_demo/bin/activate
-(kafka_demo) (base) Ekarats-MacBook-Pro:Week02 ekaratrattagan$ 
-```
-```python
-import boto3
-
-client = boto3.client('kafka')
-
-response = client.describe_cluster(
-    ClusterArn='arn:aws:kafka:us-east-2:469965391342:cluster/demo-cluster-1/9d12811a-c04f-48de-a367-26a1e87ef661-4'
-)
-
-print(response)
-```
-
-chmod 400
 
