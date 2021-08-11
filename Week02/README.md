@@ -25,3 +25,7 @@ The fourth part introduces Kafka Streams and explains its data processing capabi
 
 Docker: https://betterprogramming.pub/a-simple-apache-kafka-cluster-with-docker-kafdrop-and-python-cf45ab99e2b9
 
+Lab 1: reading live chat from Youtube (Example of #Ch3ThailandNews)
+<img width="751" alt="Screen Shot 2564-08-11 at 11 50 23" src="https://user-images.githubusercontent.com/69342162/128971375-c60b39a2-0887-40ed-ae19-674cab440160.png">
+
+
