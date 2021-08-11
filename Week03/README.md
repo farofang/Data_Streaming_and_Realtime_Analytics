@@ -15,7 +15,7 @@
 
 ## 2. Word count
 ```
-2.1 Start a kafka cluster --> Double click "1_1_start_cluster.bat"
+2.1 Start a kafka cluster --> Double click "2_1_start_cluster.bat"
 
 2.2 Create a topic --> Double click "2_1_create_streams_plaintext_input.bat"
 
