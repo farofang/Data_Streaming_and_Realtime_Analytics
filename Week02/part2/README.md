@@ -2,16 +2,15 @@
 
 In this part, we will review the most basics Kafka concepts, and start out by sending and consuming messages. This follows on from [Part 1](../part1/README.md).
 
-## Creating a topic
+## 2.1) Creating a topic
 
 A **topic** is a category or feed name to which records are published. To create a topic we need 4 things:
+- <b> bootstrap.servers </b> : is a comma-separated list of host and port pairs that are the addresses of the Kafka brokers in a "bootstrap" Kafka cluster that a Kafka client connects to initially to bootstrap itself.
+- <b> replication-factor </b> : This specifies how many copies of the data are kept in the cluster. This value should not exceed the number of Kafka servers in the cluster. Let's set that to `3` for now.
+- <b> partitions </b> : Partitions are the units of scalability. Having multiple partitions allows you to distribute a topic across several brokers. Kafka only guarantees ordering within a partition.    
+- <b> config </b> : [Some configurations](https://kafka.apache.org/documentation/#topicconfigs) can be applied per topic. If not specified, the broker defaults are used.
+- <b> topic </b> : A topic is referred by its name. It has to be unique within a cluster. Valid characters are alphanumerics plus a few symbols (`.`, `_` and `-`).
 
-    --topic **Name:** A topic is referred by its name. It has to be unique within a cluster. Valid characters are alphanumerics plus a few symbols (`.`, `_` and `-`).
-    --partitions **Partition count:** Partitions are the units of scalability. Having multiple partitions allows you to distribute a topic across several brokers. Kafka only guarantees ordering within a partition.
-    --replication-factor **Replication factor:** This specifies how many copies of the data are kept in the cluster. This value should not exceed the number of Kafka servers in the cluster. Let's set that to `3` for now.
-    - **Configurations:** [Some configurations](https://kafka.apache.org/documentation/#topicconfigs) can be applied per topic. If not specified, the broker defaults are used.
-    - bootstrap.servers is a comma-separated list of host and port pairs that are the addresses of the Kafka brokers in a "bootstrap" Kafka cluster that a Kafka client connects to initially to bootstrap itself.
-    
 Let's create our first topic. In a terminal, run the following command:
 
 ```sh
@@ -27,7 +26,9 @@ We can now see our topic if we run the list topics command:
 
 You should see this output:  `my-first-topic`
 
-## Sending some messages
+---------------
+
+## 2.2) Sending some messages
 
 Kafka comes with a command line **producer** that takes data from a file or from standard input and sends it out as messages to the Kafka cluster. By default, each line will be sent as a separate message.
 
@@ -169,4 +170,5 @@ https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e
 
 ## Next Steps
 
-Continue to [Part 3](../part3/README.md).
+Continue to [part 3](../part3/README.md).
+back to [part 1](../part2/README.md)
