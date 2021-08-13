@@ -57,10 +57,10 @@ status.storage.replication.factor=3
 
 By default, the runtime exposes its REST API on port `8083`. You can change this port by setting `rest.port=<PORT>`. The rest of this workshop assumes that the port is `8083`.
 
-Let's start the Connect runtime using the following command:
+Let's start the Connect runtime using the following command (C:\kafka_2.13-2.7.0>):
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\connect-distributed.bat .\config\connect-distributed.properties
+bin\windows\connect-distributed.bat config\connect-distributed.properties
 ```
 
 We can validate that the Kafka Connect runtime is correctly started by using its REST API. The following command returns the listed of available connectors:
@@ -97,7 +97,7 @@ This instructs the runtime to start the `FileStreamSourceConnector` connector an
 To enable our connector to work, we need to create the `streams-plaintext-input` topic.
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --create --replication-factor 3 --partitions 1 --topic streams-plaintext-input
+bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --create --replication-factor 3 --partitions 1 --topic streams-plaintext-input
 ```
 
 You should see this output:
@@ -137,7 +137,7 @@ Now that the connector is running, any line added to `C:\my_config\file-source.t
 
 Start a consumer on `streams-plaintext-input`:
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-plaintext-input --from-beginning
+bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-plaintext-input --from-beginning
 ```
 
 While the consumer is running, we can add more lines to our file and they should be consumed immediately.
