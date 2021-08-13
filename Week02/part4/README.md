@@ -140,16 +140,16 @@ public final class WordCountDemo {
 
 2. After making these updates done, we need to recompile it. You can do that by running:
 
-```sh
-
-
 #Fast and furious version: (4 secs on my pc)
+```sh
 gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
 ```
 
 ### After finishing gradle assemble
 ```sh
-Copy "kafka-streams-examples-2.7.0.jar" from "C:\src\kafka-2.7.0-src\streams\examples\build\libs" to "C:\kafka_2.13-2.7.0\libs"
+Copy "kafka-streams-examples-2.7.0.jar" from 
+"C:\src\kafka-2.7.0-src\streams\examples\build\libs" to 
+"C:\kafka_2.13-2.7.0\libs"
 ```
 
 ### Checking the result
@@ -157,7 +157,7 @@ Copy "kafka-streams-examples-2.7.0.jar" from "C:\src\kafka-2.7.0-src\streams\exa
 By default, `WordCountDemo` writes its output in the `streams-wordcount-output` topic. We can use a consumer to check the result:
 
 ```sh
-> bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-wordcount-output --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-wordcount-output --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
 ```
 
 While the Kafka Streams application is running, you can keep adding lines to our file and see new counts being emitted.
@@ -173,7 +173,7 @@ bin\windows\kafka-console-producer.bat --bootstrap-server "localhost:9092,localh
 Start `WordCountDemo` by using `kafka-run-class.bat` and specify our configuration file.
 
 ```sh
-> bin\windows\kafka-run-class.bat org.apache.kafka.streams.examples.wordcount.WordCountDemo
+bin\windows\kafka-run-class.bat org.apache.kafka.streams.examples.wordcount.WordCountDemo
 ```
 
 The Kafka Streams application will run until interrupted, such as by pressing `CTRL+C`.
