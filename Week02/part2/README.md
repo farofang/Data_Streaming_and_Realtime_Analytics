@@ -14,17 +14,17 @@ A **topic** is a category or feed name to which records are published. To create
 - <b> config </b> : [Some configurations](https://kafka.apache.org/documentation/#topicconfigs) can be applied per topic. If not specified, the broker defaults are used.
 - <b> topic </b> : A topic is referred by its name. It has to be unique within a cluster. Valid characters are alphanumerics plus a few symbols (`.`, `_` and `-`).
 
-Let's create our first topic. In a terminal, run the following command:
+Let's create our first topic. In a terminal, run the following command (C:\kafka_2.13-2.7.0\):
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --create --replication-factor 3 --partitions 2 --topic my-first-topic
+bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --create --replication-factor 3 --partitions 2 --topic my-first-topic
 ```
 
 You should see this output: `Created topic my-first-topic.`
 
 We can now see our topic if we run the list topics command:
 ```sh
-> bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --list
+bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --list
 ```
 
 You should see this output:  `my-first-topic`
@@ -36,20 +36,20 @@ You should see this output:  `my-first-topic`
 ### Sending
 Kafka comes with a command line **producer** that takes data from a file or from standard input and sends it out as messages to the Kafka cluster. By default, each line will be sent as a separate message.
 
-Run the producer, and then type a few messages into the console to send to the server.
+Run the producer, and then type a few messages into the console to send to the server (C:\kafka_2.13-2.7.0).
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-console-producer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic
+bin\windows\kafka-console-producer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic
 > This is a message
 > This is another message
 ```
 
 ### Consuming
 
-Kafka also has a command line **consumer** that prints messages to standard output.
+Kafka also has a command line **consumer** that prints messages to standard output (C:\kafka_2.13-2.7.0>).
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic --from-beginning
+bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic --from-beginning
 ```
 
 This is printed to the terminal:
@@ -70,7 +70,7 @@ When creating our topic, we used `3` as the replication factor. In Kafka, the re
 Let's describe our topic, to see the details about its replicas:
 
 ```sh
-> bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --topic my-first-topic
+bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --topic my-first-topic
 ```
 
 This is the output:
@@ -90,7 +90,6 @@ The additional lines provide information about each partition:
 - **Leader** is the broker currently responsible for reads and writes for the given partition. Each broker will be the leader for a randomly selected portion of the partitions.
 - **Replicas** is the list of brokers that replicate the log for this partition regardless of whether they are the leader or even if they are currently online.
 - **Isr** is the set of **In-Sync Replicas**. This is the subset of the replicas list that is currently online and fully in-sync with the leader.
-
 ---
 
 ## 2.3 Consumer groups
@@ -102,12 +101,12 @@ When we run the console consumer above, it consumed both partitions of our topic
 Let's restart a consumer with a group:
 
 ```sh
-> bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic --from-beginning --group my-group
+bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic --from-beginning --group my-group
 ```
 
 Now let's use the `kafka-consumer-groups.bat` tool to check the state of our group:
 ```sh
-> bin\windows\kafka-consumer-groups.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --group my-group
+bin\windows\kafka-consumer-groups.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --group my-group
 ```
 Here's the output:
 
@@ -149,7 +148,7 @@ As storage is not unlimited, retention limits can be specified to determine when
 Let's describe our topic again to check what these are:
 
 ```sh
-> bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --topic my-first-topic
+bin\windows\kafka-topics.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --describe --topic my-first-topic
 ```
 
 The output is:
