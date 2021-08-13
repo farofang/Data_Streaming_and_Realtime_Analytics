@@ -48,22 +48,22 @@ Follow these steps if you want to set up a 3-broker Kafka cluster on a single ma
 
 The first step is to get ZooKeeper running. This is necessary in order to start Kafka:
 
-We can start ZooKeeper with the default configuration file, by running this command:
+We can start ZooKeeper with the default configuration file, by running the following command when you are in c:\kafka-2.13-2.7.0\ path,
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 ```
 
 We have now started a ZooKeeper ensemble consisting of a single server. Again, this is not suitable for production but it is enough to start a Kafka cluster.
 
 ## Configuring a local Kafka cluster
 
-Kafka provides a default Kafka configuration file, `config/server.properties`. We will reuse this file and make a few changes.
+Kafka provides a default Kafka configuration file, `config\server.properties`. We will reuse this file and make a few changes.
 
-1. Make the three copies of `config/server.properties` and named them as:
-    - `config/server0.properties`
-    - `config/server1.properties`
-    - `config/server2.properties`
+1. Make the three copies of `config\server.properties` and named them as:
+    - `config\server0.properties`
+    - `config\server1.properties`
+    - `config\server2.properties`
 
 2. In each of three files:
     - Replace lines from 74 to 76 with:
@@ -86,21 +86,21 @@ Kafka provides a default Kafka configuration file, `config/server.properties`. W
 
 ## 2) Starting the Kafka cluster
 
-Now that we have all the required configurations, let's start our brokers:
+Now that we have all the required configurations, let's start our brokers (C:\kafka_2.13-2.7.0):
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-server-start.bat .\config\server0.properties
+bin\windows\kafka-server-start.bat config\server0.properties
 ```
 
 Then, open a new terminal window and run:
 
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-server-start.bat .\config\server1.properties
+bin\windows\kafka-server-start.bat config\server1.properties
 ```
 
 Then, open a new terminal window and run:
 ```sh
-C:\kafka_2.13-2.7.0>bin\windows\kafka-server-start.bat .\config\server2.properties
+bin\windows\kafka-server-start.bat config\server2.properties
 ```
 
 Congratulations, you've now started your Kafka cluster!
