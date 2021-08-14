@@ -141,6 +141,8 @@ public final class WordCountDemo {
 2. After making these updates done, we need to recompile it. You can do that by running:
 
 #Fast and furious version: (4 secs on my pc)
+
+Install [gradle](https://gradle.org/install/), Version 6 or above  //Set Environment path
 ```sh
 gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
 ```
