@@ -26,9 +26,7 @@ In distributed mode, the first step is to start the Kafka Connect runtime. We ne
 
 In order to configure Kafka Connect, follow the steps for your Kafka environment:
 
-# connect-distributed.properties
-
-Create a file (connect-distributed.properties) with the following contents:
+### 1. Create a file (connect-distributed.properties) with the following contents:
 
 ```properties
 # connectivity settings for the runtime
@@ -71,7 +69,7 @@ http://localhost:8083/connector-plugins
 
 Ensure it contains at least `org.apache.kafka.connect.file.FileStreamSourceConnector`.
 
-## Configuring the connector
+### 2. Configuring the connector
 
 Now that the runtime is running, we are able to start connectors by using the REST API.
 
@@ -92,7 +90,17 @@ In order to start the connector, we need some configurations. Create a file (c:\
 
 This instructs the runtime to start the `FileStreamSourceConnector` connector and make it read a file called `c:\\my_config\\file-source.txt`. It will send each line of this file as a message to the `streams-plaintext-input` topic. Finally, `tasks.max` allows to configure how many tasks Kafka Connect should start, which is just 1 in our scenario.
 
-## Creating the topic
+### 3. Creating and populating the source file
+
+We create the source file (c:\\my_config\\file-source.txt) and put some content in it:
+
+```sh
+first line of content
+another line
+aaa
+```
+
+### 4. Creating the topic
 
 To enable our connector to work, we need to create the `streams-plaintext-input` topic.
 
@@ -106,17 +114,7 @@ You should see this output:
 Created topic streams-plaintext-input.
 ```
 
-## Creating and populating the source file
-
-We create the source file (c:\\my_config\\file-source.txt) and put some content in it:
-
-```sh
-first line of content
-another line
-aaa
-```
-
-## Starting the connector
+### 4. Starting the connector
 
 Let's start our connector:
 
@@ -131,7 +129,7 @@ We can verify the connector is running:
 http://localhost:8083/connectors/file-source/
 ```
 
-## Testing the connector
+### 5. Testing the connector
 
 Now that the connector is running, any line added to `C:\my_config\file-source.txt` will end up in our topic.
 
