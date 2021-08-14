@@ -27,6 +27,8 @@ In order to complete this workshop, you need to have the following dependencies 
 
 - [Java SDK](https://jdk.java.net/java-se-ri/10), Version 10 //Set Environment path
 
+- java -version
+
 ## Downloading Apache Kafka
 
 In this workshop, we will use the Kafka command line tools.
