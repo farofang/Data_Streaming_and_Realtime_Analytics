@@ -26,7 +26,6 @@ or in this conference presentation,
 In order to complete this workshop, you need to have the following dependencies installed:
 
 - [Java SDK](https://jdk.java.net/java-se-ri/10), Version 10 //Set Environment path
-- [gradle](https://gradle.org/install/), Version 6 or above  //Set Environment path
 
 ## Downloading Apache Kafka
 
