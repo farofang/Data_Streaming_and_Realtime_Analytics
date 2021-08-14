@@ -36,9 +36,9 @@ This sample application consumes an input topic, counts how many times words app
 
 Let's use `WordCountDemo` to count words in our topic `streams-plaintext-input`.
 
-## Download kafka source from https://archive.apache.org/dist/kafka/2.7.0/kafka-2.7.0-src.tgz
+### Must have: download kafka source from https://archive.apache.org/dist/kafka/2.7.0/kafka-2.7.0-src.tgz
 
-Save it in "C:\src\kafka-2.7.0-src"
+Save it as "C:\src\kafka-2.7.0-src".
 
 ### Updating WordCountDemo
 
