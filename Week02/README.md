@@ -37,7 +37,9 @@ chat = pytchat.create(video_id="oTSzxLvoEJE")
 while chat.is_alive():
     for c in chat.get().sync_items():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
+        # write each line to file for kafka connector
 ```
+
 Lab 2: Twitter stream
 
 ``` python
