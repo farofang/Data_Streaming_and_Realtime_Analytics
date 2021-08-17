@@ -40,10 +40,10 @@ Run the producer, and then type a few messages into the console to send to the s
 
 ```sh
 bin\windows\kafka-console-producer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic my-first-topic
+```
 > This is a message
 > This is another message
-```
-
+> 
 ### Consuming
 
 Kafka also has a command line **consumer** that prints messages to standard output (C:\kafka_2.13-2.7.0>).
