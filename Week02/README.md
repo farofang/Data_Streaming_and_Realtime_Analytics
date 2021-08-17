@@ -38,3 +38,26 @@ while chat.is_alive():
     for c in chat.get().sync_items():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
 ```
+Lab 2: Twitter stream
+
+``` python
+import tweepy
+from tweepy import Stream
+from tweepy import OAuthHandler
+from tweepy.streaming import StreamListener
+
+class listener(StreamListener):
+    
+    def on_data(self, data):
+      	print (data.encode().decode('unicode_escape'))
+      	return True
+    
+    def on_error(self, status):
+        print (status)
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+twitterStream = Stream(auth, listener())
+twitterStream.filter(track=["popcat"])
+```
+
