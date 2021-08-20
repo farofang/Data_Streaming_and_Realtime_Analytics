@@ -33,13 +33,6 @@ in the producer window, and you will get (a 5, b 1) in the consumer window
 
 2.7 After finish testing, close all windows.
 
-2.8. Install python https://github.com/confluentinc/confluent-kafka-python
-
-2.9 Close the consumer window (2.5)
-
-2.10 Start a new consumer by using python --> Type "python consumer-local.py" for text-mode version
-
-2.11 After finish testing, close all windows.
 ```
 
 ## 3. Adding a filter function to word count (Allow only the value which is higher than 10)
