@@ -188,15 +188,15 @@ to "C:\kafka_2.13-2.7.0\libs"
 
 ### 3. Checking the result
 
-3.1 Create a new topic `streams-wordcount-output`
+3.1 Create a new topic `streams-plaintext-input`.
 
-By default, `WordCountDemo` writes its output in the `streams-wordcount-output` topic. We can use a consumer to check the result:
+3.2 We can use a consumer to check the result:
 
 ```sh
 bin\windows\kafka-console-consumer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-wordcount-output --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
 ```
 
-### Running WordCountDemo
+3.3 Running the WordCountDemo
 
 Start `WordCountDemo` by using `kafka-run-class.bat` and specify our configuration file.
 
@@ -204,16 +204,15 @@ Start `WordCountDemo` by using `kafka-run-class.bat` and specify our configurati
 bin\windows\kafka-run-class.bat org.apache.kafka.streams.examples.wordcount.WordCountDemo
 ```
 
-While the Kafka Streams application is running, you can keep adding lines to our file and see new counts being emitted.
-The Kafka Streams application will run until interrupted, such as by pressing `CTRL+C`.
+3.4 While the Kafka Streams application is running, you can keep adding lines to our file and see new counts being emitted.
 
-### (Option) 
-You can also use a producer to directly write records into the input topic:
+3.5 or You can also use a producer to directly write records into the input topic:
 
 ```sh
 bin\windows\kafka-console-producer.bat --bootstrap-server "localhost:9092,localhost:9192,localhost:9292" --topic streams-plaintext-input
 ```
 
+The Kafka Streams application will run until interrupted, such as by pressing `CTRL+C`.
 <!--
 The same logic is also implemented using the Processor API, see [WordCountProcessorDemo.java](https://github.com/apache/kafka/blob/trunk/streams/examples/src/main/java/org/apache/kafka/streams/examples/wordcount/WordCountProcessorDemo.java)
 
