@@ -172,7 +172,7 @@ The last line defines the output stream. Here, we are sending it to our output t
 
 Install [gradle](https://gradle.org/next-steps/?version=6.9.1&format=bin), Version 6  //Set Environment path
 ```sh
-gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
+gradlew assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
 ```
 
 ### After finishing gradle assemble
