@@ -142,7 +142,7 @@ public final class WordCountDemo {
 }
 
 ```
-
+<!--
 ### Looking at the code
 
 This sample application is implemented with the DSL API. The core of the logic lies in the following few lines of codes:
@@ -166,26 +166,29 @@ The middle statement performs the processing operations. For each record (which 
     - Then, words are grouped together.
     - Finally, it counts how many times each word appear and emit a record `(word, count)` per word.
 
-The last line defines the output stream. Here, we are sending it to our output topic `streams-wordcount-output` and we have to specify a serializer for both the key (words) and the value (current count).
+The last line defines the output stream. Here, we are sending it to our output topic `streams-wordcount-output` and we have to specify a serializer for both the key (words) and the value (current count). -->
 
 ### 2. After making these updates done, we need to recompile it. You can do that by running:
 
-Install [gradle](https://gradle.org/next-steps/?version=6.6&format=bin), Version 6  //Set Environment path
+<!-- Install [gradle](https://gradle.org/next-steps/?version=6.6&format=bin), Version 6   //Set Environment path 
 ```sh
 gradlew assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
 ```
+-->
+Under "C:\src\kafka-2.7.0-src"
+
+Run "gradlew srcJar" and wait until build successful
 
 ### After finishing gradle assemble
 ```sh
-Copy 
-"kafka-streams-examples-2.7.0.jar" 
-from 
-"C:\src\kafka-2.7.0-src\streams\examples\build\libs" 
-to 
-"C:\kafka_2.13-2.7.0\libs"
+Copy manually the file "kafka-streams-examples-2.7.0.jar" 
+from "C:\src\kafka-2.7.0-src\streams\examples\build\libs" 
+to "C:\kafka_2.13-2.7.0\libs"
 ```
 
-### Checking the result
+### 3. Checking the result
+
+3.1 Create a new topic `streams-wordcount-output`
 
 By default, `WordCountDemo` writes its output in the `streams-wordcount-output` topic. We can use a consumer to check the result:
 
@@ -219,3 +222,4 @@ The same logic is also implemented using the Processor API, see [WordCountProces
 Continue to [workshop summary](../part4/summary.md).-->
 
 ### Alternative to Java --> Python: https://github.com/robinhood/faust (I haven’t tried yet.)
+### Gradlew command usage https://github.com/apache/kafka
