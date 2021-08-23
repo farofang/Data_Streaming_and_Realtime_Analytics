@@ -170,7 +170,7 @@ The last line defines the output stream. Here, we are sending it to our output t
 
 ### 2. After making these updates done, we need to recompile it. You can do that by running:
 
-Install [gradle](https://gradle.org/install/), Version 6  //Set Environment path
+Install [gradle](https://gradle.org/next-steps/?version=6.9.1&format=bin), Version 6  //Set Environment path
 ```sh
 gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
 ```
