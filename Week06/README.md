@@ -46,4 +46,4 @@ in C:\Users\STD User\kafka-quickstart-workshop-main\Week6>
 
 Must use python 3.7 and Java 8
 
-
+https://nb.recohut.com/spark/pyspark/kafka/movie/2021/06/25/kafka-spark-streaming-colab.html
