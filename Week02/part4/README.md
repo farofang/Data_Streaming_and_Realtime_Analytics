@@ -188,7 +188,7 @@ to "C:\kafka_2.13-2.7.0\libs"
 
 ### 3. Checking the result
 
-3.1 Create a new topic `streams-plaintext-input`.
+3.1 Create the new topic `streams-plaintext-input`, if you closed it from the part 3.
 
 3.2 We can use a consumer to check the result:
 
@@ -219,6 +219,8 @@ The same logic is also implemented using the Processor API, see [WordCountProces
 ## Next Steps
 
 Continue to [workshop summary](../part4/summary.md).-->
+
+back to [part 3](../part3/README.md)
 
 ### Alternative to Java --> Python: https://github.com/robinhood/faust (I haven’t tried yet.)
 ### Gradlew command usage https://github.com/apache/kafka
