@@ -50,4 +50,12 @@ in the producer window, and you will get (a 5, b 1) in the consumer window
 3.6 Check your result
 ```
 
+``` Java
+ final KTable<String, Long> counts = source
+            .flatMapValues(value -> Arrays.asList(value.toLowerCase(Locale.getDefault()).split(" ")))
+            .groupBy((key, value) -> value)
+            .count()
+            .filter((key, value) -> value > 10);
+```
+
 ## Homework1: หาคำที่มีนัยสำคัญ (ไม่ใช่ article a, an ,the, ...) ในนิยาย Harry potter
