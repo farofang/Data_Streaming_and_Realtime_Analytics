@@ -177,6 +177,8 @@ gradlew assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-s
 -->
 Under "C:\src\kafka-2.7.0-src"
 
+gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc
+
 Run "gradlew srcJar" and wait until build successful
 
 ### After finishing gradle assemble
