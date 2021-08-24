@@ -223,6 +223,5 @@ Continue to [workshop summary](../part4/summary.md).-->
 back to [part 3](../part3/README.md)
 
 ### Alternative to Java --> Python: https://github.com/robinhood/faust (I haven’t tried yet.)
-### Gradlew command usage https://github.com/apache/kafka
-### Colab
-https://colab.research.google.com/drive/1rsmLLR1T2o1FANEMbQOGdXlFZ9j6uPfG?usp=sharing
+### Gradlew command usage: https://github.com/apache/kafka
+### Colab way: https://colab.research.google.com/drive/1rsmLLR1T2o1FANEMbQOGdXlFZ9j6uPfG?usp=sharing
