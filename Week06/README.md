@@ -28,9 +28,7 @@ Mobile-sensor.pdf
 
   0. pip install findspark
   1. Start a kafker cluster (zoo + brokers)
-  2. Create a topic 
-  ~~3. Run spark with the following commandline: spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.3.0 kafka_spark_demo.py~~
-
+  2. Create a topic
   3. Download the "spark-streaming-kafka-0-8-assembly_2.11-2.4.7.jar" file from https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-8-assembly_2.11/2.4.7 or from this github to drive C:\
   4. :+1: Run the following command 
   ```
