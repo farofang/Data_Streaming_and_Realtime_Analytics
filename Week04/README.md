@@ -25,6 +25,10 @@ Outline
 	
 
 Reference
-Json generator: https://github.com/everwatchsolutions/json-data-generator
+Json generator
+
+https://github.com/everwatchsolutions/json-data-generator
+
 https://kafka.apache.org/21/javadoc/org/apache/kafka/streams/kstream/KStream.html
+
 https://docs.confluent.io/platform/current/streams/faq.html
