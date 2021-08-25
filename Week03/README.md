@@ -50,6 +50,7 @@ in the producer window, and you will get (a 5, b 1) in the consumer window
 3.6 Check your result
 ```
 
+Solution of 3.
 ``` Java
  final KTable<String, Long> counts = source
             .flatMapValues(value -> Arrays.asList(value.toLowerCase(Locale.getDefault()).split(" ")))
