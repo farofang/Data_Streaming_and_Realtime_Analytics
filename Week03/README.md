@@ -29,7 +29,10 @@
 2.6 Test it. You can type
 "a a a" --> then press enter
 "a a b" --> then press enter
-in the producer window, and you will get (a 5, b 1) in the consumer window
+in the producer window, and you will get 
+a 5
+b 1 
+in the consumer window
 
 2.7 After finish testing, close all windows.
 
