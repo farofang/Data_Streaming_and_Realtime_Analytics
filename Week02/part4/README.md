@@ -170,14 +170,11 @@ The last line defines the output stream. Here, we are sending it to our output t
 
 ### 2. After making these updates done, we need to recompile it. You can do that by running:
 
-<!-- Install [gradle](https://gradle.org/next-steps/?version=6.6&format=bin), Version 6   //Set Environment path 
-```sh
-gradlew assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc core:compileScala
-```
--->
-Under "C:\src\kafka-2.7.0-src"
+Install [gradle](https://gradle.org/next-steps/?version=6.6&format=bin), Version 6.6   //Set Environment path 
 
-Run "gradlew srcJar" and wait until build successful
+Under "C:\src\kafka-2.7.0-src" run
+
+gradle assemble -x clients:javadoc streams:test-utils:javadoc streams:streams-scala:scaladoc connect:mirror-client:javadoc connect:api:javadoc core:javadoc
 
 ### After finishing gradle assemble
 ```sh

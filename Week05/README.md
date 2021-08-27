@@ -39,3 +39,7 @@ Key: wsMr09vIL6BXAX2
 
 Secret: weRsc9UoWn622SLVsV6F0K1y6
 
+### Case study
+
+https://drive.google.com/file/d/1oQLElFsosGsbbAkgQICDxd_bIGyJz2Hm/view?fbclid=IwAR2rcEIsnBBp-DsYadvtKeyP-bhbPIGnxhAht4S4QHwUcG7tZLRYWPP4PeY
+
