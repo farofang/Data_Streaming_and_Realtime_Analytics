@@ -4,7 +4,7 @@ Outline
 	- How long to get your answer?
 	- What is your answer? -->
 
-## 1. Review, Wordcount, Temperature
+## 1. Review, Wordcount, Temperature (part 0)
 
 ## 2. PageViewDemo (part 1)
    1. Start kafka cluster --> double click "1_start_cluster.bat".
