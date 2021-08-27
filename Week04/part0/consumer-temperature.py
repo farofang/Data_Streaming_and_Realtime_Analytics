@@ -9,7 +9,7 @@ c = Consumer({
 c.subscribe(['iot-temperature-max'])
 
 while True:
-    msg = c.poll(1.0)
+    msg = c.poll(0)
 
     if msg is None:
         continue
@@ -22,9 +22,9 @@ while True:
     if value is None:
         value = -1
     else:
-        value = msg.value()[-1]
+        value = msg.value().decode()
         
-    kvalue = msg.key().decode('utf-8')
+    kvalue = msg.key().decode("utf-8", "ignore")
     print('Received message: {0} , {1}'.format(kvalue, value))
     
 c.close()

@@ -9,15 +9,15 @@ def delivery_report(err, msg):
     if err is not None:
         print('Message delivery failed: {}'.format(err))
     else:
-        print('Message delivered to {} [{}]'.format(msg.topic(), msg.partition()))
+        print('Message delivered to {}'.format(msg.value().decode('utf-8')))
 
-file1 = open('myfile.txt', 'r') 
+file1 = open('my_temperature.txt', 'r') 
 Lines = file1.readlines()
 for data in Lines:
 
     p.poll(0)
-    
-    p.produce('iot-temperature', data.encode('utf-8'), callback=delivery_report)
+    sendMsg = data.encode().decode('utf-8').strip('\n')
+    p.produce('iot-temperature', sendMsg , callback=delivery_report)
     
     time.sleep(1)
 
