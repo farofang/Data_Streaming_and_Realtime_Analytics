@@ -24,7 +24,7 @@
 2.4 Start a wordcount program --> Double click "2_3_compile_word_count.bat"
 - when success built, click to continue.
 
-2.5 Start a consumer --> Double click "2_4_run_producer_wordcount.bat"
+2.5 Start a consumer --> Double click "2_4_run_consumer_wordcount.bat"
 
 2.6 Test it. You can type
 "a a a" --> then press enter
