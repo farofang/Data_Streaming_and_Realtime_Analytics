@@ -7,7 +7,7 @@ c = Consumer({
     'auto.offset.reset': 'earliest'
 })
 
-c.subscribe(['streams-pageviewstats-typed-output'])
+c.subscribe(['streams-pageviewstats-untyped-output'])
 i = 0
 
 print("Start consumer...")
