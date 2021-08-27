@@ -6,8 +6,8 @@ c = Consumer({
     'auto.offset.reset': 'earliest'
 })
 
-c.subscribe(['streams-pageviewstats-typed-output'])
-
+c.subscribe(['streams-pageviewstats-untyped-output'])
+              
 import matplotlib.pyplot as plt
 #from matplotlib.pyplot import figure
 #figure(num=None, figsize=(10, 6), dpi=80, facecolor='w', edgecolor='k')
@@ -17,7 +17,7 @@ lr = {}
 import json
 
 while True:
-    msg = c.poll(1.0)
+    msg = c.poll(0)
 
     if msg is None:
         continue
@@ -25,13 +25,15 @@ while True:
         print("Consumer error: {}".format(msg.error()))
         continue
 
-    value = msg.value()
-    kvalue = msg.key().decode('utf-8')
+    value = msg.value().decode()
+    print(value)
+    kvalue = msg.key().decode("utf-8", "ignore")
+    print(kvalue)
     x = json.loads(kvalue)
     y = json.loads(value)
-    print('Received message: {0} , {1}'.format(x["windowStart"], y["count"]))
+    print('Received message: {0} , {1}'.format(x["window-start"], y["count"]))
    
-    plt.bar(y["region"], y["count"],color='r')
+    plt.bar(x["region"], y["count"],color='r')
     plt.pause(0.1)
     
 

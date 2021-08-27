@@ -11,9 +11,9 @@ def delivery_report(err, msg):
     else:
         print('Message delivered to {} [{}]'.format(msg.topic(), msg.partition()))
 
-uList = ["user1","user2"]
-pList = ["page1","page2","page3","page4","page5"]
-rList = ["asia","europe","america"]
+uList = ["user1","user2","user3","user4","user5"]
+pList = ["page1","page2","page3","page4","page5","page6","page7","page8","page9"]
+rList = ["asia","europe","america","africa","south america"]
 
 
 import json
@@ -22,7 +22,7 @@ import random
 # Trigger any available delivery report callbacks from previous produce() calls
 # p.poll(0)
 i = 0
-print("Start producer...")
+print("Start producer...untyped...")
 
 while True:
     p.poll(0)
@@ -35,7 +35,7 @@ while True:
     print(r2)
     p.produce('streams-pageview-input', key=user, value=json.dumps(r1))
     p.produce('streams-userprofile-input', key=user, value=json.dumps(r2))
-    time.sleep(1)
+    time.sleep(0.1)
     '''i = i+1
     print(i)
     if i == 5:

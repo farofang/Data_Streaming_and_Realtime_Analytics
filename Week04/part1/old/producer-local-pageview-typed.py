@@ -22,7 +22,7 @@ import random
 # Trigger any available delivery report callbacks from previous produce() calls
 # p.poll(0)
 i = 0
-print("Start producer...")
+print("Start producer...typed...")
 
 while True:
     p.poll(0)

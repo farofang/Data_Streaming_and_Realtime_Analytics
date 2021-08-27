@@ -8,11 +8,11 @@ c = Consumer({
 })
 
 c.subscribe(['streams-pageviewstats-untyped-output'])
-i = 0
+              
 
 print("Start consumer...")
 while True:
-    msg = c.poll(1.0)
+    msg = c.poll(0)
 
     if msg is None:
         continue
@@ -20,9 +20,9 @@ while True:
         print("Consumer error: {}".format(msg.error()))
         continue
 
-    value = msg.value()
+    value = msg.value().decode()
         
-    kvalue = msg.key().decode('utf-8')
+    kvalue = msg.key().decode("utf-8", "ignore")
     print('Received message: {0} , {1}'.format(kvalue, value))
     
     
