@@ -19,6 +19,47 @@ Outline
 
 ## 4. Connect to Cloud (AWS)
 
+VENV
+- https://medium.com/@chanisarauttamawetin/virtual-environments-in-python-%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%86%E0%B8%81%E0%B8%B1%E0%B8%9A-vscode-4d23d29dd57e
+- pip install virtualenv
+- virtualenv venv
+- venv\Scripts\activate
+
+Python:
+- https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
+- pip install kafka-python
+
+```python
+#Producer
+from time import sleep
+from json import dumps
+from kafka import KafkaProducer
+
+producer = KafkaProducer(bootstrap_servers=['xxxx'],
+                         value_serializer=lambda x: 
+                         dumps(x).encode('utf-8'))
+
+for e in range(1000):
+    data = {'number' : e}
+    print(data)
+    producer.send('quickstart-events', value=data)
+    sleep(1)
+```
+```python
+#Consumer
+from kafka import KafkaConsumer
+from json import loads
+
+consumer = KafkaConsumer(
+    'quickstart-events',
+     bootstrap_servers=['xxxx'],
+     value_deserializer=lambda x: loads(x.decode('utf-8')))
+
+for message in consumer:
+    message = message.value
+    print(message)
+```
+
 ## 5. Testing before real quiz
 	1. Send data to all students
 	2. Each of them analyze data and return to teacher
