@@ -41,7 +41,10 @@ producer = KafkaProducer(bootstrap_servers=['xxxx'],
                          dumps(x).encode('utf-8'))
 
 for e in range(1000):
-    data = {'number' : e}
+    data = {
+        'timestamp' : datetime.now().strftime("%d/%m/%Y %H:%M:%S.%f'"),
+        'number' : e
+    }
     print(data)
     producer.send('quickstart-events', value=data)
     sleep(1)
