@@ -11,7 +11,7 @@ Reference
 3. https://lukkiddd.com/tf-idf-%E0%B8%84%E0%B8%B3%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%AA%E0%B8%B3%E0%B8%84%E0%B8%B1%E0%B8%8D%E0%B8%99%E0%B8%B0-dd1e1568312e
 4. Microgear: https://github.com/netpieio/microgear-python
 5. Mqtt Kafka Connector: https://johanvandevenne.github.io/kafka-connect-mqtt/
-
+6. Kafka VS Mqtt: https://stackoverflow.com/questions/37391827/what-is-the-difference-between-mqtt-broker-and-apache-kafka
 
 student2
 
