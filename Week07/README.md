@@ -11,7 +11,7 @@
         - Introduce MLlib
         - Twitter sentiment analysis https://github.com/lakshay-arora/PySpark/tree/master/spark_streaming
 
-7.3 Spark Streaming Machine Learning (Streaming way)
+7.3 Scikit-learn Multiflow
 
         - Batch Learning VS Stream Learning
         - Decision tree
@@ -20,5 +20,3 @@
         - Scikit-learn Multiflow
         - https://scikit-multiflow.github.io/
         - Paper: https://jmlr.org/papers/volume19/18-251/18-251.pdf
-
-7.4 Activity monitoring
