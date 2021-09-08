@@ -41,5 +41,10 @@ Secret: weRsc9UoWn622SLVsV6F0K1y6
 
 ### Case study
 
+1) Aj. supachai @ TU
 https://drive.google.com/file/d/1oQLElFsosGsbbAkgQICDxd_bIGyJz2Hm/view?fbclid=IwAR2rcEIsnBBp-DsYadvtKeyP-bhbPIGnxhAht4S4QHwUcG7tZLRYWPP4PeY
 
+2) Bloomberg
+https://sponsored.bloomberg.com/article/artificial/bhc3/intelligence-is-delivering-on-its-promise-for-the-energy-industry?utm_medium=social&utm_id=customcontent-BHC3&utm_source=Twitter&utm_campaign=Business-Paid&utm_content=APAC-Ad1&twclid=11435530884610809857
+
+3) TBD
