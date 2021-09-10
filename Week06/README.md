@@ -43,3 +43,4 @@ Must use python 3.7 and Java 8
 
 ### 6.3.2 Setup and run Spark on colab
 https://nb.recohut.com/spark/pyspark/kafka/movie/2021/06/25/kafka-spark-streaming-colab.html
+Dataset --> https://grouplens.org/datasets/movielens/
