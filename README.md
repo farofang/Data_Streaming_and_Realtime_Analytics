@@ -4,20 +4,20 @@
 | 1     |     Introduction |
 | 2     |     Kafka technology |
 | 3     |     Kafka Streaming (I) |
-| 4     |     Kafka Streaming (II) |
-| 5     |     Internet of Things (IoT) | Quiz 1 (10%) |
+| 4     |     Kafka Streaming (II) | Quiz 1 (10%), present Week 7 |
+| 5     |     Internet of Things (IoT) | 
 | 6     |     Iot: Smartphone data |
-| 7     |     Apache Spark (I) |
-| 8     |     Apache Spark (II) |
+| 7     |     Apache Spark (I) & Scikit-multiflow (I) |
+| 8     |     Apache Spark (II) & Scikit-multiflow (II) | Quiz 2 (20%), present Week 11 |
 | -     |     | Midterm exam (30%) |
-| 9     |     Video game analytics (I) Scikit multiflow | 
-| 10    |     Video game analytics (II) Scikit multiflow | Quiz 2 (15%) | 
+| 9     |     Video game analytics (I) | 
+| 10    |     Video game analytics (II) | 
 | 11    |     Clustering in data streams |
-| 12    |     Classification in data streams |
-| 13    |     Real-time bidding | Quiz 3 (15%) |
+| 12    |     Classification in data streams | Present project proposal |
+| 13    |     Real-time bidding |
 | 14    |     Automated trading: MT4 + python (I) | 
 | 15    |     Automated trading: MT4 + python (II) |
-| -     |     | Final project (30%) | 
+| -     |     | Present Final project (40%) | 
 
 Last quiz
 
