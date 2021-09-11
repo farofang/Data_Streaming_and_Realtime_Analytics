@@ -4,11 +4,11 @@
 | 1     |     Introduction |
 | 2     |     Kafka technology |
 | 3     |     Kafka Streaming (I) |
-| 4     |     Kafka Streaming (II) | Quiz 1 (10%), present Week 7 |
+| 4     |     Kafka Streaming (II) | Assign Quiz 1 (10%), present Week 7 |
 | 5     |     Internet of Things (IoT) | 
 | 6     |     Iot: Smartphone data |
 | 7     |     Apache Spark (I) & Scikit-multiflow (I) |
-| 8     |     Apache Spark (II) & Scikit-multiflow (II) | Quiz 2 (20%), present Week 11 |
+| 8     |     Apache Spark (II) & Scikit-multiflow (II) | Assign Quiz 2 (20%), present Week 11 |
 | -     |     | Midterm exam (30%) |
 | 9     |     Video game analytics (I) | 
 | 10    |     Video game analytics (II) | 
